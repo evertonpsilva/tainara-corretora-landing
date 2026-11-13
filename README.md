@@ -9,9 +9,10 @@ Site estático de página única para a corretora de imóveis Tainara Gomes
   `#sobre`, `#servicos`, `#imoveis`, `#contato`).
 - **Imóveis em destaque**: cada `<article class="card listing">` é um
   anúncio. Troque título, bairro, preço e o link do botão.
-- **Foto de perfil**: o círculo com "TG" em `.hero-photo` é um placeholder.
-  Para usar uma foto real, adicione o arquivo em `assets/` e troque o `<div
-  class="avatar-circle">` por `<img src="assets/foto-tainara.jpg" alt="Tainara Gomes">`.
+- **Foto de perfil**: `assets/foto-tainara.jpg`. Para trocar, substitua o
+  arquivo (mantenha o mesmo nome) ou edite o `src` do `<img class="avatar-photo">`
+  em `index.html`. O recorte circular usa `object-position` em `styles.css`
+  para enquadrar o rosto — ajuste a porcentagem vertical se a foto mudar.
 - **CRECI**: o número no site está parcial (`29377...`) — confirme o número
   completo e atualize em `index.html` (aparece no rodapé e perto do botão de
   WhatsApp).
