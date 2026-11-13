@@ -8,17 +8,23 @@ Site estático de página única para a corretora de imóveis Tainara Gomes
 - **Textos**: abra `index.html`, todo o conteúdo visível está lá (seções
   `#sobre`, `#servicos`, `#imoveis`, `#contato`).
 - **Imóveis em destaque**: cada `<article class="card listing">` é um
-  anúncio. Troque título, localização, preço e o link do botão — hoje a
-  localização está genérica ("Fortaleza e região metropolitana"), pode trocar
-  pelo bairro real de cada imóvel.
-- **Foto de perfil**: `assets/foto-tainara.jpg`. Para trocar, substitua o
-  arquivo (mantenha o mesmo nome) ou edite o `src` do `<img class="avatar-photo">`
-  em `index.html`. O recorte circular usa `object-position` em `styles.css`
-  para enquadrar o rosto — ajuste a porcentagem vertical se a foto mudar.
+  anúncio. Os dois primeiros ("Paço das Águas" e "Casas em Horizonte") vieram
+  de posts reais do Instagram dela — confirme se ainda estão disponíveis antes
+  de divulgar, ou troque pelos anúncios ativos (título, localização, preço e
+  link do botão).
+- **Card flutuante do hero** (`.hero-floating-card`, no `index.html`): mesma
+  ideia do card acima, mas só um destaque — hoje repete o "Paço das Águas".
+- **Foto de perfil**: `assets/foto-tainara.jpg`, usada tanto no hero principal
+  (`.hero-portrait`) quanto no selo rotacionado (`.hero-badge`, texto "Consulta
+  grátis"). Para trocar, substitua o arquivo (mantenha o mesmo nome) e ajuste
+  `object-position` em `styles.css` se o enquadramento do rosto mudar.
 - **CRECI**: `29377`, conforme informado. Se o registro dela usar um formato
   diferente (ex.: com dígito verificador), atualize em `index.html` (aparece
   no rodapé e perto do botão de WhatsApp).
-- **Cores**: variáveis no topo de `styles.css` (`:root`).
+- **Cores**: variáveis no topo de `styles.css` (`:root`), incluindo o
+  gradiente do hero (`--color-accent-start`/`--color-accent-end`).
+- **Fonte de título**: Fraunces (Google Fonts), carregada no `<head>` do
+  `index.html`; aplicada a `h1`/`h2` via `--font-display` em `styles.css`.
 
 ## Rodar localmente
 
