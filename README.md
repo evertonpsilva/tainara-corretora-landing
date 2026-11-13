@@ -8,14 +8,16 @@ Site estático de página única para a corretora de imóveis Tainara Gomes
 - **Textos**: abra `index.html`, todo o conteúdo visível está lá (seções
   `#sobre`, `#servicos`, `#imoveis`, `#contato`).
 - **Imóveis em destaque**: cada `<article class="card listing">` é um
-  anúncio. Troque título, bairro, preço e o link do botão.
+  anúncio. Troque título, localização, preço e o link do botão — hoje a
+  localização está genérica ("Fortaleza e região metropolitana"), pode trocar
+  pelo bairro real de cada imóvel.
 - **Foto de perfil**: `assets/foto-tainara.jpg`. Para trocar, substitua o
   arquivo (mantenha o mesmo nome) ou edite o `src` do `<img class="avatar-photo">`
   em `index.html`. O recorte circular usa `object-position` em `styles.css`
   para enquadrar o rosto — ajuste a porcentagem vertical se a foto mudar.
-- **CRECI**: o número no site está parcial (`29377...`) — confirme o número
-  completo e atualize em `index.html` (aparece no rodapé e perto do botão de
-  WhatsApp).
+- **CRECI**: `29377`, conforme informado. Se o registro dela usar um formato
+  diferente (ex.: com dígito verificador), atualize em `index.html` (aparece
+  no rodapé e perto do botão de WhatsApp).
 - **Cores**: variáveis no topo de `styles.css` (`:root`).
 
 ## Rodar localmente
