@@ -20,6 +20,7 @@
       <a href="#sobre">Sobre</a>
       <a href="#servicos">Serviços</a>
       <a href="#imoveis">Imóveis</a>
+      <a href="#clientes">Clientes</a>
       <a href="#contato">Contato</a>
     </nav>
     <a class="btn btn-whatsapp btn-small" href="https://wa.me/5585985001867" target="_blank" rel="noopener">Falar no WhatsApp</a>
@@ -56,15 +57,6 @@
           <div class="hero-badge">Tainara Gomes<span>Consulta grátis</span></div>
         </div>
       </div>
-    </div>
-    <div class="hero-floating-card">
-      <div class="floating-card-photo" aria-hidden="true">Foto</div>
-      <div class="floating-card-body">
-        <p class="floating-card-price">A partir de R$ 251.000</p>
-        <h3>Paço das Águas</h3>
-        <p class="floating-card-meta">2 e 3 quartos com suíte · Maracanaú · lazer completo</p>
-      </div>
-      <a class="btn btn-outline btn-small" href="https://wa.me/5585985001867" target="_blank" rel="noopener">Ver imóvel</a>
     </div>
   </section>
 
@@ -140,7 +132,32 @@
     </div>
   </section>
 
-  <section id="contato" class="section section-alt contact">
+  <section id="clientes" class="section section-alt clients">
+    <div class="container">
+      <h2>Sonhos realizados</h2>
+      <p class="section-text-hint">Clientes que saíram do aluguel e receberam as chaves da casa própria.</p>
+      <div class="carousel">
+        <button class="carousel-btn carousel-prev" type="button" aria-label="Anterior">‹</button>
+        <div class="carousel-track" tabindex="0" aria-label="Fotos de clientes">
+          <figure class="carousel-slide">
+            <img src="assets/cliente-1.jpg" alt="Tainara Gomes entregando as chaves com a placa +1 Sonho Realizado">
+            <figcaption>+1 sonho realizado 🔑</figcaption>
+          </figure>
+          <figure class="carousel-slide">
+            <img src="assets/cliente-2.jpg" alt="Clientes recebendo as chaves do apartamento novo">
+            <figcaption>Chaves entregues, sonho na mão</figcaption>
+          </figure>
+          <figure class="carousel-slide">
+            <img src="assets/cliente-3.jpg" alt="Família na porta da casa própria nova">
+            <figcaption>Mais uma família na casa própria</figcaption>
+          </figure>
+        </div>
+        <button class="carousel-btn carousel-next" type="button" aria-label="Próximo">›</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="section contact">
     <div class="container">
       <h2>Vamos conversar?</h2>
       <p class="section-text">
@@ -164,5 +181,20 @@
   </div>
 </footer>
 
+<script>
+  document.querySelectorAll('.carousel').forEach(function (carousel) {
+    var track = carousel.querySelector('.carousel-track');
+    var step = function () {
+      var slide = track.querySelector('.carousel-slide');
+      return slide ? slide.getBoundingClientRect().width + 16 : track.clientWidth;
+    };
+    carousel.querySelector('.carousel-prev').addEventListener('click', function () {
+      track.scrollBy({ left: -step(), behavior: 'smooth' });
+    });
+    carousel.querySelector('.carousel-next').addEventListener('click', function () {
+      track.scrollBy({ left: step(), behavior: 'smooth' });
+    });
+  });
+</script>
 </body>
 </html>

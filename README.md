@@ -6,14 +6,18 @@ Site estático de página única para a corretora de imóveis Tainara Gomes
 ## Como editar
 
 - **Textos**: abra `index.html`, todo o conteúdo visível está lá (seções
-  `#sobre`, `#servicos`, `#imoveis`, `#contato`).
+  `#sobre`, `#servicos`, `#imoveis`, `#clientes`, `#contato`).
 - **Imóveis em destaque**: cada `<article class="card listing">` é um
   anúncio. Os dois primeiros ("Paço das Águas" e "Casas em Horizonte") vieram
   de posts reais do Instagram dela — confirme se ainda estão disponíveis antes
   de divulgar, ou troque pelos anúncios ativos (título, localização, preço e
   link do botão).
-- **Card flutuante do hero** (`.hero-floating-card`, no `index.html`): mesma
-  ideia do card acima, mas só um destaque — hoje repete o "Paço das Águas".
+- **Sonhos realizados** (`#clientes`): carrossel de fotos de clientes que
+  já receberam as chaves (`assets/cliente-1.jpg` a `cliente-3.jpg`). Para
+  adicionar mais, copie um `<figure class="carousel-slide">` dentro de
+  `.carousel-track` e inclua a foto em `assets/`. Não há depoimento em texto
+  atribuído a cliente nenhum — só a legenda genérica da foto; se for
+  adicionar uma citação real, peça autorização do cliente antes.
 - **Foto de perfil**: `assets/foto-tainara.jpg`, usada tanto no hero principal
   (`.hero-portrait`) quanto no selo rotacionado (`.hero-badge`, texto "Consulta
   grátis"). Para trocar, substitua o arquivo (mantenha o mesmo nome) e ajuste
